@@ -177,6 +177,30 @@ li {
   text-align: left;
 }
 
+/*  */
+/* Estilo base del menú desplegable */
+.sub-menu {
+  display: none; /* Inicialmente oculto */
+  /* position: absolute; */
+  top: 100%;
+  left: 0;
+  background-color: #ffffff00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  padding: 8px 0;
+  transition: opacity 300ms;
+}
+
+/* Mostrar la sublista cuando el usuario coloca el cursor sobre "Destination" */
+.nav__list li:hover .sub-menu {
+  display: block;
+}
+
+/* Opcional: para animar la aparición de la sublista */
+.sub-menu.visible {
+  opacity: 1;
+}
+
 .nav.active {
   z-index: 1;
   opacity: 1;

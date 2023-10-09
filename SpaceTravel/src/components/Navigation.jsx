@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation() {
+  const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsSubMenuVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsSubMenuVisible(false);
+  };
+  
   const [isActive,setIsActive] = useState(0);
   const handleClick = (e,index) => {
     e.preventDefault();
@@ -21,10 +31,23 @@ function Navigation() {
                 <span className="nav__item-number">00</span> Home </Link>
             </p>
           </li>
-          <li className={`${isActive === 2 ? "active" : ""}`} onClick={(e) => handleClick(e,2)}>
+          <li className={`${isActive === 2 ? "active" : ""}`} onClick={(e) => handleClick(e,2)} 
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <p className="nav-text">
-              <Link to="/destination">
-                <span className="nav__item-number">01</span> Destination </Link>
+              <a href="#">
+                <span className="nav__item-number">01</span> Destination </a>
+              <ul className={`sub-menu ${isSubMenuVisible[2] ? "visible" : ""}`}>
+                <li>
+                  <Link to="/destination/mercury">
+                    <span className="nav__item-number">01  </span> Mercury 
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/destination/venus">
+                    <span className="nav__item-number">02  </span> Mars
+                  </Link>
+                </li>
+              </ul>
             </p>
           </li>
           <li className={`${isActive === 3 ? "active" : ""}`} onClick={(e) => handleClick(e,3)}>
