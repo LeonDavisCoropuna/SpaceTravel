@@ -26,25 +26,25 @@ function Venus() {
               class={`destination ${sourse === 0 && "active"}`}
               onClick={(e) => handleClickSource(e, 0)}
             >
-              <p class="nav-text destination-text">Info</p>
+              <p class="nav-text destination-text">Dia 1</p>
             </li>
             <li
               class={`destination ${sourse === 1 && "active"}`}
               onClick={(e) => handleClickSource(e, 1)}
             >
-              <p class="nav-text destination-text light-blue">Mars</p>
+              <p class="nav-text destination-text light-blue">Dia 2</p>
             </li>
             <li
               class={`destination ${sourse === 2 && "active"}`}
               onClick={(e) => handleClickSource(e, 2)}
             >
-              <p class="nav-text destination-text light-blue">Europa</p>
+              <p class="nav-text destination-text light-blue">Dia 3</p>
             </li>
             <li
               class={`destination ${sourse === 3 && "active"}`}
               onClick={(e) => handleClickSource(e, 3)}
             >
-              <p class="nav-text destination-text light-blue">Titan</p>
+              <p class="nav-text destination-text light-blue">Dia 4</p>
             </li>
           </ul>
 
@@ -59,13 +59,13 @@ function Venus() {
             <div class="info">
               <h3 class="subheading-2 light-blue"> Avg. distance </h3>
               <p class="subheading-1" id="destinationDistance">
-                {data.destinations[sourse].distance}
+                384,400 km
               </p>
             </div>
             <div class="info">
               <h3 class="subheading-2 light-blue"> Est. travel time </h3>
               <p class="subheading-1" id="destinationTime">
-                {data.destinations[sourse].time}
+                3 Days
               </p>
             </div>
           </div>

@@ -4,16 +4,16 @@ export default function Mercury() {
   return (
     <div>
       <div class="destinations">
-        <aside>
-          <main class="destinations__main">
+        {/* <aside>
+          {/* <main class="destinations__main">
             <h1 class="heading-5">
               <span class="opacity-5">01</span> Pick your destination
             </h1>
-          </main>
+          </main> 
           <div class="destinations__img">
             <img src="../assets/destination/image-moon.png" alt="Image: Moon" width="100%" />
           </div>
-        </aside>
+        </aside> */}
         <section class="destinations__section">
           <ul class="destinations__names">
             <li class="destination active">

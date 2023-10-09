@@ -1,11 +1,9 @@
 export const data = {
     destinations: [
       {
-        header: "Moon",
+        header: "Día 1: Llegada y Exploración en Caloris Basin",
         description:
-          "See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
-        distance: "384,400 km",
-        time: "3 Days",
+          "Al llegar a Mercurio, seremos recibidos por una vista espectacular de su paisaje desértico y escarpado. Nuestra primera parada será el cráter Caloris, uno de los mayores tesoros geológicos del planeta y el lugar más cálido de este. Este inmenso cráter, formado por el impacto de un meteorito, tiene más de 1,500 kilómetros de diámetro y está rodeado por montañas impresionantes y cráteres enormes, puede considerarse inclusive una llanura por su inmenso tamaño. Aquí podremos apreciar los picos centrales y la asombrosa topografía del cráter. Este se formo con el impacto de un gran asteroide, cuando Mercurio era un planeta joven. Dicha área se inundó de lava, se enfrió y se volvió brillante, destacando así en toda esa área.",
         img: "../assets/destination/image-moon.png",
       },
       {
