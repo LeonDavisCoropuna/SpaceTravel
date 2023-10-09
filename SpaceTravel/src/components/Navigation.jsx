@@ -1,61 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navigation() {
-  // function addActiveClassToLink() {
-  //   const links = document.querySelectorAll('.nav__list li');
-  
-  //   links.forEach((link) => {
-  //     link.addEventListener('click', function () {
-  //       links.forEach((li) => li.classList.remove('active'));
-  //       this.classList.add('active');
-  //     });
-  //   });
-  // }
-
-  // useEffect(() => {
-  //   addActiveClassToLink();
-  // }, []);
+  const [isActive,setIsActive] = useState(0);
+  const handleClick = (e,index) => {
+    e.preventDefault();
+    setIsActive(index);
+  }
   return (
     <div>
-      <a href="../index.html">
-        <img src="../assets/shared/logo.svg" alt="Image: Logo" class="logo" />
-      </a>
-      <nav class="nav">
-        <img src="../assets/shared/icon-close.svg" alt="Close navbar icon" class="close-nav" />
-        <ul class="nav__list">
-          <li class="active">
-            <p class="nav-text">
+      <Link href="/home">
+        <img src="../assets/shared/logo.svg" alt="Image: Logo" className="logo" />
+      </Link>
+      <nav className="nav">
+        <img src="../assets/shared/icon-close.svg" alt="Close navbar icon" className="close-nav" />
+        <ul className="nav__list">
+          <li className={`${isActive === 1 ? "active" : ""}`} onClick={(e) => handleClick(e,1)}>
+            <p className="nav-text">
               <Link to="/home">
-                <span class="nav__item-number">00</span> Home </Link>
+                <span className="nav__item-number">00</span> Home </Link>
             </p>
           </li>
-          <li>
-            <p class="nav-text">
+          <li className={`${isActive === 2 ? "active" : ""}`} onClick={(e) => handleClick(e,2)}>
+            <p className="nav-text">
               <Link to="/destination">
-                <span class="nav__item-number">01</span> Destination </Link>
+                <span className="nav__item-number">01</span> Destination </Link>
             </p>
           </li>
-          <li>
-            <p class="nav-text">
+          <li className={`${isActive === 3 ? "active" : ""}`} onClick={(e) => handleClick(e,3)}>
+            <p className="nav-text">
               <Link to="/book">
-                <span class="nav__item-number">02</span> Book </Link>
+                <span className="nav__item-number">02</span> Book </Link>
             </p>
           </li>
-          <li>
-            <p class="nav-text">
+          <li className={`${isActive === 4 ? "active" : ""}`} onClick={(e) => handleClick(e,4)}>
+            <p className="nav-text">
               <Link to="/about">
-                <span class="nav__item-number">03</span> About </Link>
+                <span className="nav__item-number">03</span> About </Link>
             </p>
           </li>
         </ul>
-        <div class="nav__line opacity-25"></div>
+        <div className="nav__line opacity-25"></div>
       </nav>
-      <div class="hamburger">
+      <div className="hamburger">
         <img src="../assets/shared/icon-hamburger.svg" alt="Image: icon hamburger" />
       </div>
     </div>
   );
 }
 
-export default Navigation;
+export default Navigation;

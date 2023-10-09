@@ -3,42 +3,6 @@ import React from 'react'
 export default function Mercury() {
   return (
     <div>
-      <a href="../index.html">
-        <img src="../assets/shared/logo.svg" alt="Image: Logo" class="logo" />
-      </a>
-      <nav class="nav">
-        <img src="../assets/shared/icon-close.svg" alt="Close navbar icon" class="close-nav" />
-        <ul class="nav__list">
-          <li>
-            <p class="nav-text ">
-              <a href="../index.html">
-                <span class="nav__item-number">00</span>Home</a>
-            </p>
-          </li>
-          <li class="active">
-            <p class="nav-text">
-              <a href="#">
-                <span class="nav__item-number">01</span> Destination </a>
-            </p>
-          </li>
-          <li>
-            <p class="nav-text">
-              <a href="./crew-commander.html">
-                <span class="nav__item-number">02</span> Crew </a>
-            </p>
-          </li>
-          <li>
-            <p class="nav-text">
-              <a href="./technology-vehicle.html">
-                <span class="nav__item-number">03</span> Technology </a>
-            </p>
-          </li>
-        </ul>
-        <div class="nav__line opacity-25"></div>
-      </nav>
-      <div class="hamburger">
-        <img src="../assets/shared/icon-hamburger.svg" alt="Image: icon hamburger" />
-      </div>
       <div class="destinations">
         <aside>
           <main class="destinations__main">
