@@ -1,5 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
+//import "./idx.js";
+//import "./data.json"
 import Home from "./pages/Home";
 import Book from "./pages/Book";
 import About from "./pages/About";
