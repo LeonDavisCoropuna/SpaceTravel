@@ -1,38 +1,32 @@
-export const data = {
-    destinations: [
+export const destinations = {
+    mercury: [
       {
         header: "Día 1: Llegada y Exploración en Caloris Basin",
         description:
           "Al llegar a Mercurio, seremos recibidos por una vista espectacular de su paisaje desértico y escarpado. Nuestra primera parada será el cráter Caloris, uno de los mayores tesoros geológicos del planeta y el lugar más cálido de este. Este inmenso cráter, formado por el impacto de un meteorito, tiene más de 1,500 kilómetros de diámetro y está rodeado por montañas impresionantes y cráteres enormes, puede considerarse inclusive una llanura por su inmenso tamaño. Aquí podremos apreciar los picos centrales y la asombrosa topografía del cráter. Este se formo con el impacto de un gran asteroide, cuando Mercurio era un planeta joven. Dicha área se inundó de lava, se enfrió y se volvió brillante, destacando así en toda esa área.",
-        img: "../assets/destination/image-moon.png",
+        img: "https://smd-cms.nasa.gov/wp-content/uploads/2023/09/PIA19216_1280.jpg",
       },
       {
-        header: "Mars",
+        header: "Día 2: Ruta hacia el Polo Norte de Mercurio",
         description:
-          "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
-        distance: "225 MIL. km",
-        time: "9 months",
-        img: "../assets/destination/image-mars.png",
+          "Continuaremos nuestro viaje hacia el Polo Norte de Mercurio, (Borealis Planitia) donde ahora experimentaremos condiciones extremas con temperaturas extremadamente frías. Aquí, se descubrieron depósitos de hielo de agua en las áreas permanentemente en sombra de los cráteres, cubiertas por una capa de polvo rocoso que las proteje de la evaporación.",
+        img: "https://nssdc.gsfc.nasa.gov/imgcat/hires/m10_aom_18.gif",
       },
       {
-        header: "Europa",
+        header: "Día 3: Ubicación de la sonda MESSENGER",
         description:
-          "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
-        distance: "628 MIL. km",
-        time: "3 years",
-        img: "../assets/destination/image-europa.png",
+          "No podemos olvidar mencionar la sonda MESSENGER, la primera y única misión espacial que orbitó Mercurio en el pasado. Haremos una parada en el lugar donde aterrizó para recordar este hito en la exploración espacial. Este se ubica en el cráter Zeami. Tendremos la oportunidad de aprender más sobre las investigaciones realizadas por la sonda y su contribución a nuestra comprensión del planeta.",
+        img: "https://nssdc.gsfc.nasa.gov/planetary/image/mariner10.gif",
       },
       {
-        header: "Titan",
+        header: "Día 4: Regreso e información de la ultima misión a Mercurio - Bepicolombo",
         description:
-          "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
-        distance: "1.6 BIL. km",
-        time: "7 years",
-        img: "../assets/destination/image-titan.png",
+          "En este último día en Mercurio, reflexionaremos sobre nuestra increíble aventura en este planeta inexplorado. Además, informaremos acerca de la misión Bepicolombo. Esta es una misión espacial conjunta de la ESA y Japón, dicha estación de investigación se encuentra en camino al planeta rocoso para orbitar en él, y permitirá recopilar información valiosa del mismo a partir de año 2025 aproximadamente.",
+        img: "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2021/10/bepicolombo_meets_mercury/23493061-1-eng-GB/BepiColombo_meets_Mercury_pillars.png",
       },
     ],
 
-    crew: [
+    venus: [
       {
         name: "Douglas Hurley",
         position: "Commander",
