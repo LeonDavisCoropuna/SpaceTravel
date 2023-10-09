@@ -1,0 +1,49 @@
+.destination-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-color: none;
+    color: white;
+  }
+  
+  .destination-label {
+    margin-bottom: 8px;
+    
+    border-collapse: collapse;
+    border-color: none;
+    color: white;
+  }
+  
+  .destination-select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    border-collapse: collapse;
+    border: none;
+    color:black;
+    
+    
+    
+  }
+  .destinations-select{
+    border-right: 1px solid black;
+  }
+  select {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 200px;
+  }
+  
+  option {
+    background-color: white;
+    color: black;
+  }
+  input{
+    color: black;
+  }

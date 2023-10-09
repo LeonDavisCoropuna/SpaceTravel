@@ -1,0 +1,87 @@
+/* App.css */
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+* {
+  margin:0;
+  
+  padding: 0;
+  box-sizing: border-box;
+  /*color: #ffffff;*/
+  font-weight: 400;
+  text-align: center;
+  
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between; /* Distribuye los elementos en el contenedor principal */
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 5rem;
+    
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: row; /* Mantiene la dirección del contenedor principal como fila */
+    justify-content: space-between; /* Distribuye los elementos en la fila */
+    align-items: center;
+    background-color: aqua;
+    padding: 10px; /* Asegúrate de agregar las unidades (por ejemplo, px) para el valor del padding */
+    border-radius: 10px;
+   
+  }
+  
+  .button-section {
+    margin-top: 20px; /* Ajusta el espacio entre las secciones y el botón */    
+  }
+  button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    color: black;
+    border-collapse: collapse;
+    background-color: #D0D6F9;
+    font-size: 14px;
+  }
+  
+  /* Estilos específicos para cada sección del formulario */
+  .destinations-section,
+  .date-section,
+  .adult-children-section {
+    margin: 0;
+    margin-bottom: 10px; /* Ajusta el espacio entre las secciones */
+    padding: 10px;
+    height: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    border-right: 1px solid black;
+  }
+  .date-section{
+    margin: 0;
+    flex-direction: column;
+    margin-bottom: 10px; /* Ajusta el espacio entre las secciones */
+    padding: 10px;
+    height: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  
+  /* Otros estilos que desees aplicar */
+  label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+  }
+
+
+  .destinations-section,
+  .date-section,
+  .adult-children-section,
+  div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
