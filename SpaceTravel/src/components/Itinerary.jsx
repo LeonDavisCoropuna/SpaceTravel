@@ -21,7 +21,8 @@ function Itinerary({ destination, duration }) {
   };
 
   // Crear un array de días del itinerario
-  const itineraryDays = destinations[destination.destination].fillter((e,index)=>index < duration? e: null)
+  const itineraryDays = destinations[destination.destination].slice(0, duration);
+
   console.log(itineraryDays)
 
 
