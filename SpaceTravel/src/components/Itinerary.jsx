@@ -2,39 +2,42 @@
 
 import React from 'react';
 import '../App.css';
+import { destinations } from "../data.js";
 
 function Itinerary({ destination, duration }) {
   // Función para generar actividades de ejemplo
-  const generateActivities = (day) => {
+  
+  
+  const generateActivities = (day, planet) => {
     // Puedes personalizar esto según las actividades reales que quieras incluir
+    
     return (
       <ul>
-        <li>Exploración del paisaje</li>
-        <li>Visita a atracciones locales</li>
-        <li>Actividades recreativas</li>
+        <li>{destinations[planet].day[day]}</li>
+        
         {/* Agrega más actividades según sea necesario */}
       </ul>
     );
   };
 
   // Crear un array de días del itinerario
-  const itineraryDays = Array.from({ length: duration }, (_, index) => index + 1);
+  const itineraryDays = destinations[destination.destination].fillter((e,index)=>index < duration? e: null)
+  console.log(itineraryDays)
+
 
   return (
     <div className="itinerary-container">
       <div className="sidebar">
         <h2>Destination</h2>
-        <div className="sidebar-options">
-          {/* Aquí puedes colocar opciones relacionadas con el destino */}
-          <p>Option 1</p>
-          <p>Option 2</p>
-          {/* Agrega más opciones según sea necesario */}
+        <div className="sidebar-options">          
+          <p>{destination.destination}</p>
+
         </div>
       </div>
       <div className="itinerary-content">
         <div className="itinerary-header">
-          <h2>Itinerary for {destination}</h2>
-          <p>Destination: {destination}</p>
+          <h2>Travel Itinerary </h2>
+          
         </div>
         <div className="itinerary-days">
           {itineraryDays.map((day) => (
