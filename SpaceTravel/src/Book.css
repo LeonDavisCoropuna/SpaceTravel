@@ -12,14 +12,20 @@
 }
 
 .container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos en el contenedor principal */
+  align-items: center;
+  height: 10vh;
+  padding: 5rem;
+  
     
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between; /* Distribuye los elementos en el contenedor principal */
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    padding: 5rem;
+  }
+  .form-section {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
     
   }
   
@@ -28,7 +34,7 @@
     flex-direction: row; /* Mantiene la dirección del contenedor principal como fila */
     justify-content: space-between; /* Distribuye los elementos en la fila */
     align-items: center;
-    background-color: aqua;
+    background-color:rgba(22, 22, 134, 0.308);
     padding: 10px; /* Asegúrate de agregar las unidades (por ejemplo, px) para el valor del padding */
     border-radius: 10px;
    
@@ -42,9 +48,17 @@
     width: 200px;
     border-radius: 5px;
     color: black;
-    border-collapse: collapse;
+    border-collapse: none;
     background-color: #D0D6F9;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+  }
+  button:hover{
+    background-color:  rgba(22, 22, 134, 0.308);
+    color: white;
+    font: bold;
+    cursor: pointer;
   }
   
   /* Estilos específicos para cada sección del formulario */
