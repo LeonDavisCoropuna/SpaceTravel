@@ -34,8 +34,8 @@ function Navigation() {
           <li className={`${isActive === 2 ? "active" : ""}`} onClick={(e) => handleClick(e,2)} 
             onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <p className="nav-text">
-              <a href="#">
-                <span className="nav__item-number">01</span> Destination </a>
+              <Link to="/destination">
+                <span className="nav__item-number">01</span> Destination </Link>
               <ul className={`sub-menu ${isSubMenuVisible[2] ? "visible" : ""}`}>
                 <li>
                   <Link to="/destination/mercury">

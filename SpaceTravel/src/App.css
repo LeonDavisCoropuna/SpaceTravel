@@ -838,3 +838,10 @@ li {
     width: 444px;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+.imagecontainer {
+  max-width: 150px; /* Ancho máximo deseado */
+  max-height: 150px; /* Alto máximo deseado */
+  object-fit: cover; /* Recorta la imagen para que se ajuste al cuadro sin deformarla */
+}
