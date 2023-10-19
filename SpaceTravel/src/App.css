@@ -859,3 +859,18 @@ li {
   margin: 10px;
   /* Añade otros estilos según sea necesario */
 }
+
+.integrantes {
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 30px;
+  padding-top: 300px;
+}
+.integrantes>ul>li {
+  padding: 10px;
+}
+.integrantes>h1{
+  margin-bottom: 10px;
+}
+.integrantes>ul>li:hover{
+  background-color: gray;
+}

@@ -253,7 +253,7 @@ export const destinations = {
         description:
           "Uranus has 27 known moons, each with its own unique characteristics and features. We'll focus on a few key moons during our exploration: Miranda, Titania and Oberon, Ariel and Umbriel",
 
-        img: "https://static.wikia.nocookie.net/terragenesis/images/1/10/Moons_of_Uranus.png/revision/latest?cb=20190617122708",
+        img: "https://www.nasa.gov/wp-content/uploads/2020/02/imagebtwofacesofuranus.jpg",
       },
     ],
   },

@@ -20,7 +20,7 @@ function Navigation() {
   return (
     <div>
       <Link href="/home">
-        <img src="../assets/shared/logo.svg" alt="Image: Logo" className="logo" />
+        <img src="\src\assets\SAC_logo.original.svg" alt="Image: Logo" className="logo" width={150} height={150}style={{filter:"invert(100%)", borderRadius:"5px"}}/>
       </Link>
       <nav className="nav">
         <img src="../assets/shared/icon-close.svg" alt="Close navbar icon" className="close-nav" />

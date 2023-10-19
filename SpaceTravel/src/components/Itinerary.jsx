@@ -13,14 +13,20 @@ function Itinerary({ itinerayPlanet }) {
   return (
     <div className="itinerary-container">
       <div className="sidebar">
-        <di className="sidebar-tittle">
+        <div className="sidebar-tittle">
           <h2>Destination</h2>
-        </di>
+        </div>
         <div className="sidebar-options">
           <p>
             {itinerayPlanet.destination.charAt(0).toUpperCase() +
               itinerayPlanet.destination.slice(1)}
           </p>
+        </div>
+        <div>
+          <h2>Date: </h2>
+          <div className="sidebar-options">
+            <p>{JSON.stringify(itinerayPlanet.travelDate)}</p>
+          </div>
         </div>
       </div>
       <div className="itinerary-content">
