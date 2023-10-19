@@ -1,7 +1,7 @@
 // Itinerary.js
 
 import React from "react";
-import "../App.css";
+import "/src/Itinerary.css"; // Importa el archivo de estilos
 import { destinations } from "../data.js";
 
 function Itinerary({ itinerayPlanet }) {
@@ -13,7 +13,9 @@ function Itinerary({ itinerayPlanet }) {
   return (
     <div className="itinerary-container">
       <div className="sidebar">
-        <h2>Destination</h2>
+        <di className="sidebar-tittle">
+          <h2>Destination</h2>
+        </di>
         <div className="sidebar-options">
           <p>
             {itinerayPlanet.destination.charAt(0).toUpperCase() +
