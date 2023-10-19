@@ -36,18 +36,7 @@ function Navigation() {
             <p className="nav-text">
               <Link to="/destination">
                 <span className="nav__item-number">01</span> Destination </Link>
-              <ul className={`sub-menu ${isSubMenuVisible[2] ? "visible" : ""}`}>
-                <li>
-                  <Link to="/destination/mercury">
-                    <span className="nav__item-number">01  </span> Mercury 
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/destination/venus">
-                    <span className="nav__item-number">02  </span> Mars
-                  </Link>
-                </li>
-              </ul>
+              
             </p>
           </li>
           <li className={`${isActive === 3 ? "active" : ""}`} onClick={(e) => handleClick(e,3)}>

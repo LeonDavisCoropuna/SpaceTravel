@@ -847,3 +847,15 @@ li {
   min-height: 150px;
   object-fit: cover; /* Recorta la imagen para que se ajuste al cuadro sin deformarla */
 }
+
+.grid-container {
+  padding: 270px 200px 0px 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  min-width: calc(25% - 30px); /* Ajusta el ancho de cada columna */
+  margin: 10px;
+  /* Añade otros estilos según sea necesario */
+}

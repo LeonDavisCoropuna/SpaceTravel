@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 //import NavigationPlanets from "./componets/NavigationPlanets";
 function Destination() {
   return (
-    <div className="destinations">
+    <div className="grid-container">
       {Object.entries(destinations).map(([key, value], index) => (
-        <div key={index}>
+        <div key={index} className="grid-item">
           <Link to={value.src}>
             {console.log(value.src)}
             <h2> {value.title}</h2>
