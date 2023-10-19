@@ -1,0 +1,87 @@
+
+
+
+
+
+
+/* Itinerary.css */
+/* Itinerary.css */
+
+.itinerary-container {
+    margin-top:100px;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    
+    width: 90%;
+  }
+  
+  .sidebar {
+    width: 20%;
+    height: 80vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    background-color: rgba(122, 122, 122, 0.242);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Puedes cambiarlo a 'space-around' según tus preferencias */
+    font-family: "Barlow Condensed", sans-serif;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 60px;
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(218, 218, 218, 0.935);
+    
+  }
+  .sidebar p {
+    margin-bottom: 60px;
+    font-size: 30px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+  .itinerary-content {
+    flex: 1;
+    background-color: rgba(12, 12, 81, 0.214);
+    
+  }
+  .itinerary-header  {
+    margin-bottom: 20px;
+    background-color: rgba(47, 10, 75, 0.51);
+    padding: 20px;
+    justify-content: center;
+
+  }
+  .itinerary-header h2 {
+    margin-bottom: 20px;
+    font-family: "Barlow", sans-serif;
+    font-size: 40px;
+  }
+  
+  .itinerary-days {
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+  }
+  
+  .itinerary-day {
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #cccccc59;
+    padding: 15px 0;
+    border-radius: 10px 10px 0px 0px ;
+  }
+  .itinerary-day:hover{
+    background-color: rgba(0, 0, 0, 0.493);
+  }
+  
+  /* Puedes agregar más estilos según sea necesario */
+  .button-section {
+    margin-top: 50%; /* Ajusta el espacio entre las secciones y el botón */    
+  }
