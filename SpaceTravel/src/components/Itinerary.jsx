@@ -9,7 +9,6 @@ function Itinerary({ itinerayPlanet }) {
   const itineraryDays = destinations[itinerayPlanet.destination].days.filter(
     (e, index) => index < itinerayPlanet.duration
   );
-  console.log(itineraryDays);
 
   return (
     <div className="itinerary-container">

@@ -44,7 +44,7 @@ function Navigation() {
                 </li>
                 <li>
                   <Link to="/destination/venus">
-                    <span className="nav__item-number">02  </span> Venus
+                    <span className="nav__item-number">02  </span> Mars
                   </Link>
                 </li>
               </ul>
