@@ -843,5 +843,7 @@ li {
 .imagecontainer {
   max-width: 150px; /* Ancho máximo deseado */
   max-height: 150px; /* Alto máximo deseado */
+  min-width: 150px;
+  min-height: 150px;
   object-fit: cover; /* Recorta la imagen para que se ajuste al cuadro sin deformarla */
 }

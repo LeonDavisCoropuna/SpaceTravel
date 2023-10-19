@@ -4,7 +4,7 @@ export const destinations = {
       title: "Mercury",
       time: "1212",
       distance: "1212 km",
-      img:  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/640px-Venus_globe.jpg",
+      img:  "https://www.ngenespanol.com/wp-content/uploads/2023/06/saturno-asi-es-el-planeta-menos-denso-del-sistema-solar.jpg",
       src: "/destination/mercury",
       days: [
         {
